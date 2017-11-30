@@ -1,0 +1,18 @@
+
+function randomColHex(){
+    var arrStart =['#']; // this is the array that is 'built' onto
+    var seed =['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F']; // this is the array that the function builds from
+
+    for(i=0;i<6;i++){
+    var rand =Math.floor(Math.random()*15);
+    arrStart.push(seed[rand]);
+    console.log(seed[rand]);
+    }
+    var fin= arrStart.join('');
+    document.getElementById('bdMain').style.backgroundColor = fin; // This section needs to be somehow  
+    document.getElementById('bdText').style.color = fin;            // condensed into just one variable.     
+    document.getElementById('bdElement').style.background = fin;    //
+    
+      
+    
+}
